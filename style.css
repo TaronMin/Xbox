@@ -1,0 +1,728 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #373A3C; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8DD83D; 
+    border-radius: 10px;
+  }
+.top-div{
+    position: fixed;
+    z-index: 999999;
+    padding: 20px;
+    font-size: 20px;
+    color: beige;
+    background: #000;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.5s  ease;
+    transform: translateY(100px);
+}
+.burger{
+    display: none;
+    position: relative;
+}
+.burger>i{
+    color: #8DD83D;
+    font-size: 30px;
+}
+.for-burger-div{
+    width: 175px !important;
+    transition: 0.5s  ease;
+}
+.burger-div{
+    position: fixed;
+    width: 0px;
+    height: 100%;
+    background: #373A3C;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    transition: 0.5s  ease;
+}
+.transform-class{
+    transform: translate(0px) !important;
+    transition: 0.5 ease;
+}
+.close-icon{
+    display: inline-block;
+    transform: translate(-20px, 15px);
+    font-size: 25px;
+    color: #8DD83D;
+    z-index: 99999;
+    transition: 0.5s ease;
+}
+.top-div:hover{
+    background: rgb(180, 5, 5);
+}
+header,main,footer,.w-100{
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.d-flex-between-center-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.m0-auto{
+    margin: 0 auto;
+}
+header{
+    background: #373A3C;
+    padding: 15px;
+}
+.content-of-header{
+    width: 80%;
+}
+.header-input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.second-in-header>ul>li{
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.second-in-header{
+    width: 700px;
+}
+.ul-in-header>li>i{
+    color: #8DD83D;
+    margin-left: 5px;
+}
+.ul-in-header>li>span>i{
+    color: #8DD83D;
+    margin-left: 5px;
+}
+.slider-div{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.arrow-left-slider,.arrow-right-slider{
+    position: absolute;
+    z-index: 999;
+    color: #8DD83D;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.arrow-left-slider{
+    left: 30px;
+}
+.arrow-right-slider{
+    right: 30px;
+}
+.first-img-slider{
+    width: 100%;
+    height: 610px;
+    background: url("./Photo/Star-Wars-Battlefront-II-combat.png") no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.second-img-slider{
+    width: 100%;
+    height: 610px;
+    background: url("https://compass-ssl.xbox.com/assets/3c/6a/3c6af090-3dbd-4f02-90a6-98ec04b98cff.jpg?n=299441_Page-Hero-1084_1920x720.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: none;
+}
+.third-img-slider{
+    width: 100%;
+    height: 610px;
+    background: url("https://compass-ssl.xbox.com/assets/3e/9c/3e9c180a-3126-4c37-a098-59b927df0837.jpg?n=For-Honor_Page-Hero-1084_Standard-Edition_1920x720.jpg") no-repeat;
+    background-size: cover;
+    background-position: right top;
+    display: none;
+}
+.second-chapter{
+    background: #4D5053;
+    display: flex;
+    justify-content: center;
+}
+.shape-second{
+    width: 55px;
+    margin: 30px 0px;
+} 
+.content-of-second{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    transform: scale(0);
+    opacity: 0;
+}
+.first-p-in-second,.second-p-in-second{
+    color: #fff;
+}
+.first-p-in-second{
+    font-size: 48px;
+    line-height: 56px;
+}
+.second-p-in-second{
+    font-size: 36px;
+    line-height: 42px;
+}
+.for-cards-second>div{
+    margin: 20px;
+}
+.content-of-cards{
+    background: #fff;
+}
+.title-of-card{
+    font-size: 18px;
+    line-height: 21px;
+    color: #435766;
+}
+.inform-of-card{
+    font-size: 24px;
+    line-height: 28px;
+    color: #435766;
+    margin-top: 10px;
+}
+.href-in-card{
+    color: #fff;
+    padding: 15px 20px;
+    background: #8DD83D;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.content-of-cards{
+    padding: 24px;
+}
+.second-img-card,.third-img-card{
+    padding: 60px;
+    background: #FAFAFA;
+}
+.third-img-card{
+    padding: 35px;
+}
+.third-chapter{
+    height: 780px;
+    background: url("./Photo/third-chapter-img.png") no-repeat;
+    background-size: cover;
+    background-position: left top;
+    position: relative;
+    z-index: 1;
+}
+.second-slider-arrow{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    font-size: 20px;
+    color: #8DD83D;
+    cursor: pointer;
+}
+.title-of-second-slider{
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.content-of-third{
+    position: relative;
+    z-index: 999;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.filter-div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.5);
+}
+.xbox-store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-slider-href{
+    display: inline-block;
+    color: #fff;
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+.forth-chapter{
+    height: 480px;
+    background: url("./Photo/forth-chapter-img.png") no-repeat;
+    background-size: cover;
+    background-position: right top;
+    position: relative;
+    z-index: 1;
+    padding: 70px;
+}
+.first-p-in-forth{
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.second-p-in-forth{
+    max-width: 533px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.href-div-in-forth{
+    display: flex;
+    margin-top: 30px;
+}
+.first-href-forth,.second-href-forth{
+    display: inline-block;
+    color: #fff;
+}
+.first-href-forth{
+    padding: 15px 20px;
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    border-radius: 4px;
+}
+.second-href-forth{
+    padding: 15px 20px;
+    background: #8DD83D;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.content-of-forth{
+    padding: 70px;
+}
+footer{
+    background: #373A3C;
+}
+.title-of-footer-ul{
+    font-size: 18px;
+    line-height: 21px;
+    color: #7DD42F;
+}
+.content-of-footer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.content-of-footer>ul>li{
+    font-size: 14px;
+    margin-top: 16px;
+    color: #FFFFFF;
+}
+.content-of-footer>ul>li>i{
+    color: #7DD42F;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.foot{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #c1c1c1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.foot>p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.right-slider{
+    position: absolute;
+    right: 100%;
+}
+.left-slider{
+    position: absolute;
+    right: 0%;
+}
+.second-slider-div {
+    display: flex;
+    align-items: flex-start;
+    width: min-content;
+    transition: 1s all ease;
+    margin-top: 45px;
+}
+.second-p-in-second-slider{
+    font-size: 21px;
+    line-height: 25px;
+    color: #435766;
+}
+.href-in-second-slider{
+    background: #8DD83D;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 20px;
+}
+.second-slider-div>div{
+    padding-bottom: 20px;
+    margin: 30px;
+}
+.inform-div-in-second-slider{
+    background: #fff;
+    padding: 20px;
+}
+.ect-href-style{
+    margin-top: 70px;
+}
+.second-slider-div>div>img{
+    height: 198px;
+}
+.left-arrow-slider-second{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 20px;
+    color: #8DD83D;
+    cursor: pointer;
+}
+.games-li,.console{
+    position: relative;
+}
+.games-opened-div{
+    position: absolute;
+    z-index: 9;
+    background: #fff;
+    top: 38px;
+    left: -40px;
+    height: 0;
+    transition: 0.5s all ease;
+    overflow: hidden;
+    width: 150px;
+}
+.games-opened-div>ul>li{
+    color: #000;
+    padding: 10px;
+    white-space: nowrap;
+}
+.games-opened-div>ul>li:hover{
+    background: rgba(0,0,0,0.5);
+}
+.display{
+    height: 180px;
+}
+.display-w{
+    width: 150px !important;
+}
+.console-opened-div{
+    width: 100%;
+    left: 0px;
+    top: 58px;
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+    transition: 0.5s all ease;
+    overflow: hidden;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px; 
+}
+.display-console{
+    height: 611px;
+}
+.display-console-w{
+    width: 100vw !important;
+}
+.ps4-w{
+    width: 500px;
+}
+.ps4{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.ps4>a{
+    color: rgb(0,114,206);
+}
+.console-big-ul>ul{
+    margin: 20px;
+}
+/*//////////////////////// MEDIA SCREEN ///////////////////////////////////*/
+@media (max-width: 1155px) and (min-width: 1024px){
+    .content-of-header {
+        width: 90%;
+    }
+    .for-cards-second{
+        width: 95%;
+    }
+    .content-of-second {
+        width: 100%;
+    }
+    .for-cards-second>div{
+        margin: 20px 0px 0px 0px;
+    }
+    .ps4-w {
+        width: 400px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 767px){
+    .burger{
+        display: block;
+    }
+    .second-in-header {
+        width: 320px;
+    }
+    .content-of-header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-div{
+        display: block;
+    }
+    .for-cards-second{
+        width: 95%;
+    }
+    .content-of-second {
+        width: 100%;
+    }
+    .for-cards-second>div{
+        margin: 20px 0px 0px 0px;
+    }
+    .ps4-w {
+        width: 400px;
+    }
+    .games-opened-div{
+        position: absolute;
+        left: 135px;
+        top: -10px;
+    }
+    .games-li{
+        position: fixed;
+        left: 40px;
+        z-index: 99;
+        top: 70px;
+        transform: translate(-150px);
+        transition: 0.5s ease;
+    }
+    .console-li{
+        position: fixed;
+        left: 40px;
+        z-index: 99;
+        top: 120px;
+        transform: translate(-150px);
+        transition: 0.5s ease;
+    }
+    .community{
+        position: fixed;
+        left: 40px;
+        z-index: 99;
+        top: 170px;
+        transform: translate(-150px);
+        transition: 0.5s ease;
+    }
+    .ul-in-header>li>span>i{
+        transform: rotateZ(-90deg);
+    }
+    .games-opened-div{
+        width: 0px;
+        height: 180px;
+        transition: 1s ease;
+    }
+    .console-opened-div{
+        position: absolute;
+        width: 0px;
+        top: -120px;
+        left: 135px;
+        z-index: 99999;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 611px;
+    }
+    .ps4-w{
+        width: 200px;
+    }
+    .for-cards-second{
+        flex-direction: column;
+    }
+}
+@media (max-width: 766px) and (min-width: 320px){
+    .console-big-ul{
+        flex-direction: column;
+    }
+    .content-of-header {
+        width: 90%;
+    }
+    .for-cards-second{
+        width: 95%;
+    }
+    .content-of-second {
+        width: 100%;
+    }
+    .for-cards-second>div{
+        margin: 20px 0px 0px 0px;
+    }
+    .games-opened-div{
+        position: absolute;
+        left: 135px;
+        top: -10px;
+    }
+    .games-li{
+        position: fixed;
+        left: 40px;
+        z-index: 99;
+        top: 70px;
+        transform: translate(-150px);
+        transition: 0.5s  ease;
+    }
+    .console-li{
+        position: fixed;
+        left: 40px;
+        z-index: 99;
+        top: 120px;
+        transform: translate(-150px);
+        transition: 0.5s  ease;
+    }
+    .community{
+        position: fixed;
+        left: 40px;
+        z-index: 99;
+        top: 170px;
+        transform: translate(-150px);
+        transition: 0.5s  ease;
+    }
+    .ul-in-header>li>span>i{
+        transform: rotateZ(-90deg);
+    }
+    .games-opened-div{
+        width: 0px;
+        height: 180px;
+        transition: 1s ease;
+    }
+    .console-opened-div{
+        position: absolute;
+        width: 0px;
+        top: -120px;
+        left: 135px;
+        z-index: 99999;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 611px;
+    }
+    .ps4-w{
+        width: 120px;
+    }
+    .for-cards-second{
+        flex-direction: column;
+    }
+    .href-div-in-forth>a{
+        text-align: center;
+    }
+    .content-of-forth{
+        padding: 0;
+    }
+    .content-of-forth>div>p{
+        color: rgb(184, 8, 46);
+    }
+    .forth-chapter {
+        height: 350px;
+        padding: 5px;
+    }
+    .for-cards-second>div>img{
+        width: 297px;
+    }
+    .content-of-cards {
+        padding: 13px;
+    }
+    .content-of-third{
+        padding-top: 10px;
+    }
+    .title-of-second-slider {
+        font-size: 23px;
+    }
+    .second-slider-arrow{
+        top: 40px;
+    }
+    .top-div{
+        right: 5px;
+        bottom: 5px;
+    }
+    .second-slider-div>div>img{
+        width: 280px;
+    }
+    .second-slider-div>div{
+        margin: 20px 10px 10px 10px;
+    }
+    .second-slider-arrow,.left-arrow-slider-second{
+        top: 57px;
+        font-size: 30px;
+    }
+    .burger{
+        display: block;
+    }
+    .second-in-header {
+        width: 320px;
+    }
+    .content-of-header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-div{
+        display: block;
+    }
+    .ps4{
+        padding: 0px;
+        font-size: 14px;
+    }
+    .logo-div{
+        display: none;
+    }
+    .second-in-header {
+        width: 170px;
+    }
+    .header-input{
+        width: 12rem;
+        margin-bottom: 20px;
+    }
+    .content-of-footer{
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .m-10{
+        margin: 0px 10px 10px 10px;
+    }
+}

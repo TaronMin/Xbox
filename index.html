@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>XBOX</title>
+</head>
+<body>
+    <scroll-container>
+        <scroll-page id="page-1"></scroll-page>
+      </scroll-container>
+    <a class="top-div" href="#page-1">
+        Top
+    </a>
+    <header>
+        <div class="content-of-header m0-auto d-flex-between-center-wrap">
+            <div class="burger" onclick="burger()"><i class="fas fa-bars"></i></div>
+                <div class="burger-div">
+                    <span class="close-icon" onclick="closeBurger()"><i class="fas fa-times"></i></span>
+                </div>
+            
+            <div class="logo-div"><img src="./Photo/xbox-header.png" alt=""></div>
+            <div class="second-in-header">
+                <ul class="d-flex-between-center-wrap ul-in-header">
+                    <li class="games-li"> <span onclick="gamesDiv()">Games<i class="fas fa-chevron-down"></i></span>
+                        <div class="games-opened-div">
+                            <ul>
+                                <li>Assassin's Creed</li>
+                                <li>Call of Duty</li>
+                                <li>Neeed For Speed</li>
+                                <li>Medal of Honor</li>
+                                <li>Splinter Cell</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="console-li"> <span onclick="consoleDiv()">Consoles<i class="fas fa-chevron-down"></i></span>
+                        <div class="console-opened-div">
+                            <ul class="console-big-ul d-flex-between-center-wrap">
+                                <ul>
+                                    <li><img class="ps4-w" src="./Photo/ps/first.png" alt=""></li>
+                                    <li class="ps4"><a  href="https://www.playstation.com/en-us/ps4/">PlayStation®4</a></li>
+                                </ul>
+                               <ul>
+                                    <li><img class="ps4-w" src="./Photo/ps/second.png" alt=""></li>
+                                    <li class="ps4"><a  href="https://www.playstation.com/en-us/ps4/">PlayStation®4 Pro</a></li>
+                               </ul>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="community">Community</li>
+                    <li><input type="text" class="header-input" placeholder="Search"></li>
+                    <li><i class="fas fa-user"></i> My XBOX<i class="fas fa-chevron-down"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="slider-div w-100">
+            <span class="arrow-left-slider" onclick="left()"><i class="fas fa-chevron-left"></i></span>
+            <div class="first-img-slider"></div>
+            <div class="second-img-slider"></div>
+            <div class="third-img-slider"></div>
+            <span class="arrow-right-slider" onclick="rigth()"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <section class="w-100 second-chapter">
+            <div class="content-of-second">
+                <img class="shape-second" src="./Photo/Shape.png" alt="">
+                <p class="first-p-in-second text-center">The best value</p>
+                <p class="second-p-in-second text-center">in games and entertainment</p>
+                <div class="for-cards-second d-flex-between-center-wrap">
+                    <div>
+                        <img src="./Photo/first-in-second.png" alt="">
+                        <div class="content-of-cards">
+                            <p class="title-of-card">XBOX ONE X</p>
+                            <p class="inform-of-card">Faster Processing
+                                <br>
+                                Smoother Gameplay
+                            </p>
+                            <a class="href-in-card" href="#">Explore Consoles & Accessories</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/second-in-second.png" class="second-img-card" alt="">
+                        <div class="content-of-cards">
+                            <p class="title-of-card">mixer Streaming</p>
+                            <p class="inform-of-card">
+                                The Next Generation
+                                <br>
+                                Of Life Game Streaming
+                            </p>
+                            <a class="href-in-card" href="#">Start Watching mixer</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/third-in-second.png"class="third-img-card" alt="">
+                        <div class="content-of-cards">
+                            <p class="title-of-card">Free Games Every Month</p>
+                            <p class="inform-of-card">
+                                Get up to $700 in 
+                                <br>
+                                free games
+                            </p>
+                            <a class="href-in-card" href="#">Get Free Games</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-100 third-chapter">
+            <div class="filter-div"></div>
+            <div class="content-of-third m0-auto">
+                <span class="left-arrow-slider-second" onclick="secondSliderLeft()"><i class="fas fa-chevron-left"></i></span>
+                <span class="second-slider-arrow" onclick="secondSlider()"><i class="fas fa-chevron-right"></i></span>
+                <p class="title-of-second-slider text-center">Exclusive games on XBOX</p>
+                <div class="second-slider-div">
+                    <div>
+                        <img src="./Photo/second-slider/first.png" alt="">
+                        <div class="inform-div-in-second-slider">
+                            <p class="first-p-in-second-slider">Call of Duty: WWII</p>
+                            <p class="second-p-in-second-slider">The C.O.D.E. Bravery Pack
+                                <br>
+                                is now available in WWII</p>
+                            <a href="#" class="href-in-second-slider">See Details</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/second-slider/second.png" alt="">
+                        <div class="inform-div-in-second-slider">
+                            <p class="first-p-in-second-slider">Destiny 2</p>
+                            <a href="#" class="href-in-second-slider ect-href-style">See Details</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/second-slider/third.png" alt="">
+                        <div class="inform-div-in-second-slider">
+                            <p class="first-p-in-second-slider">STEEP</p>
+                            <a href="#" class="href-in-second-slider ect-href-style">See Details</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/second-slider/forth.png" alt="">
+                        <div class="inform-div-in-second-slider">
+                            <p class="first-p-in-second-slider">Forza Motorsport 7</p>
+                            <a href="#" class="href-in-second-slider ect-href-style">See Details</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/second-slider/second.png" alt="">
+                        <div class="inform-div-in-second-slider">
+                            <p class="first-p-in-second-slider">Destiny 2</p>
+                            <a href="#" class="href-in-second-slider ect-href-style">See Details</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/second-slider/first.png" alt="">
+                        <div class="inform-div-in-second-slider">
+                            <p class="first-p-in-second-slider">Call of Duty: WWII</p>
+                            <p class="second-p-in-second-slider">The C.O.D.E. Bravery Pack
+                                <br>
+                                is now available in WWII</p>
+                            <a href="#" class="href-in-second-slider">See Details</a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Photo/second-slider/forth.png" alt="">
+                        <div class="inform-div-in-second-slider">
+                            <p class="first-p-in-second-slider">Forza Motorsport 7</p>
+                            <a href="#" class="href-in-second-slider ect-href-style">See Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 xbox-store">
+                    <a href="#" class="second-slider-href">XBOX Store</a>
+                </div>
+            </div>
+        </section>
+        <section class="w-100 forth-chapter">
+            <div class="content-of-forth">
+                <div><p class="first-p-in-forth">Xbox Design Lab</p></div>
+                <div><p class="second-p-in-forth">Make yours one in a billion with new colors, metallic finishes and rubberized grips.</p></div>
+                <div class="href-div-in-forth">
+                    <a href="#" class="first-href-forth">Design Yours</a>
+                    <a href="#" class="second-href-forth">Explore Consoles & Accessories</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content-of-footer">
+            <ul>
+                <span class="title-of-footer-ul">XBOX</span>
+                <li>Support</li>
+                <li>Contact us</li>
+                <li>Privacy & cookies </li>
+                <li>Terms of use </li>
+            </ul>
+            <ul class="m-10">
+                <span class="title-of-footer-ul">Developers</span>
+                <li>Games</li>
+                <li>Windows 10</li>
+                <li>Creators Program</li>
+                <li>Designed for XBOX</li>
+            </ul>
+            <ul>
+                <span class="title-of-footer-ul">Follow us</span>
+                <li><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i>  <i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <p>English (United States)</p>
+            <p> © Microsoft 2017</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
